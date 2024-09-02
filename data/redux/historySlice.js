@@ -21,10 +21,13 @@ const historySlice = createSlice({
         totalPrice,
         status:'در حال ارسال'
       })
+    },
+    clearHistory: (state) => {
+      state.historyCart = [];
     }
 
   }
 })
 
-export const {addToHistory} = historySlice.actions;
+export const {addToHistory, clearHistory} = historySlice.actions;
 export default historySlice.reducer

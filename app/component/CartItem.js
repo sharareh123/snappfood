@@ -42,8 +42,8 @@ export const CartItem = ({food}) => {
         </div>
       </div> 
       <div className="cart_food_price_add">
-        <div>
-        {price}
+        <div className="cart_food_price">
+        {price} تومان
         </div>
         <div style={{display:'flex',alignItems:'center'}}>
          <button onClick={handleAddToCart} className="cart_food_btns">

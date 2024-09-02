@@ -58,8 +58,8 @@ const Page = ({params}) => {
                 </div>
               </div> 
               <div className="food_price_add">
-               <div>
-                {food.price}
+               <div className="food_price">
+                {food.price} تومان
                </div>
                <AddButton food={food}/>
               </div>              

@@ -1,5 +1,5 @@
 'use client'
-import { HistoryList } from "../component/HistoruList"
+import { HistoryList } from "../component/HistoryList"
 import { CartList } from "../component/CartList"
 
 

@@ -50,6 +50,7 @@
 .res_category_name{
   position: relative;
   cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .category_image{
   width: 170px;
@@ -100,7 +101,6 @@
   width: 300px;
   height: 300px;
   overflow: hidden;
-  background-color: blue;
 }
 .res_img{
   position: absolute;
@@ -134,9 +134,9 @@
   color: rgb(58, 61, 66);
 }
 .res_rang_icon{
-  color: darkorange;
   margin-left: 5px;
   margin-top: 0.5px;
+  color: yellow;
 }
 .res_rang_num {
   font-size: small;
@@ -154,7 +154,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border:1px solid #000;
   margin-Top:35px;
 }
 
@@ -169,7 +168,6 @@
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background-color: green;
 }
 .res_list_header_container{
   display: flex;
@@ -200,18 +198,17 @@
 .main_res_card {
   width: 70%;
   height: 250px;
-  background-color: brown;
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   padding: 1rem;
   margin-bottom: 1rem;
 }
 
 .main_image_container {
-  background-color: orange;
   width: 150px;
   height: 150px;
   position: relative;
@@ -228,6 +225,7 @@
   right: -4px;
   width: 50px;
   height: 50px;
+  border-radius: 5px;
 }
 .main_res_name{
   font-size: 12px;
@@ -244,7 +242,6 @@
   height: 150px;
   margin-bottom: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background-color: yellow;
 }
 .food_name{
   font-weight: bold;
@@ -252,32 +249,40 @@
   color: rgb(58, 61, 66);
   margin-bottom: 5px;
   padding-bottom: 5px;
+  cursor: pointer;
 }
 .food_description{
   font-weight: 400;
   font-size: 0.6rem;
   line-height: 14px;
   color: rgb(166, 170, 173);
+  cursor: pointer;
 }
 .food_img{
   border-radius: 8px;
   padding-left: 10px;
   margin-top: 10px;
+  cursor: pointer;
 }
 .food_price_add{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 15px 10px 10px;
+  cursor: pointer;
 }
 .food_add_btn{
-  font-family: sans-serif;
   border: 0.09375rem solid rgb(8, 8, 8);
   border-radius: 3rem;
   color: rgb(255, 0, 166);
   background-color: rgb(255, 255, 255);
   width: 80px;
   height: 25px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.food_price{
+  font-size: 10px;
 }
 .orders_header{
   font-size: 12px;
@@ -288,7 +293,6 @@
   flex-wrap: wrap;
   margin: 20px;
   width: 100%;
-  background-color: red;
 }
 
 .food_cart {
@@ -300,11 +304,9 @@
   height: 160px;
   margin-bottom: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background-color: yellow;
 }
 
 .cart_food_card_container {
-  background-color: gold;
   display: flex;
   height: 120px;
   align-Items: center;
@@ -326,6 +328,9 @@
 .cart_food_img {
   border-radius: 8px;
 }
+.cart_food_price{
+  font-size: 12px;
+}
 
 .food_card_container {
   display: flex;
@@ -334,7 +339,6 @@
   width: 80%;
   margin-top: 15px;
   margin-right: 10px;
-  background-color: green;
 }
 .cart_food_btns{
   border: 0.09375rem solid rgba(15, 1, 11, 0.06);
@@ -357,7 +361,6 @@
   cursor: pointer;
 }
 .total_cart_container{
-  background-color: blue;
   width: 100%;
 }
 .total_cart{
@@ -379,7 +382,6 @@
 .delete_payment_container{
   display: flex;
   margin-top: 15px;
-  background-Color:orangered;
 }
 .all_delete_payment_btns{
   display: flex;
@@ -407,13 +409,13 @@
 .orders_detail_page{
   display: flex;
   flex-direction: column;
-  background-color: purple;
 }
 .orders_detail_title{
   font-size: 16px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 15px;
 }
 .carthistory_title_container {
   display: flex;
@@ -429,14 +431,12 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width:120px;
   height: 30px;
-  background-color: yellow;
 }
 
 .history_food_card{
   width: 90%;
   height: 150px;
   border-radius: 5px;
-  background-color: aqua;
   display: flex; 
   flex-direction: column;
   justify-content:space-between;
@@ -461,6 +461,8 @@
 .history_food_price{
   margin-right: 10px;
   margin-top: 10px;
+  font-size: 12px;
+  margin-bottom: 15px;
 }
 .orders_header {
   margin-top: 10px;
@@ -577,7 +579,7 @@
   background-Color: white;
   border: 1px solid black; 
   border-Radius: 5px;
-  z-Index: 800px;
+  z-Index: 1000;
 }
 .selectfood_name{
   font-size: 12px;
@@ -599,7 +601,6 @@
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
-      background-color: white;
     }
   
   .carthistory_title {
@@ -612,18 +613,16 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 120px;
     height: 30px;
-    background-color: yellow;
   }
   .history_food_card {
-      width: 300px;
-      height: 150px;
-      border-radius: 5px;
-      background-color: aqua;
-      display: flex;
-      flex-direction: column;
-      margin-top: 15px;
-      margin-Bottom: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-Bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 }
 @media (min-width: 450px) and (max-width:768px) {
@@ -631,16 +630,15 @@
     width: 100%;
   }
   .restaurant-list-container {
-      margin: 30px;
-      display: flex;
-      flex-wrap: wrap;
-      width: 30%;
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
   }
  .cart_food_card {
    display: flex;
    flex-wrap: wrap;
    margin: 20px;
-   background-color: red;
  }
 
  .food_cart {
@@ -653,7 +651,6 @@
    margin-bottom: 10px;
    margin-left: 10px;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-   background-color: yellow;
  }
  .order_history {
    display: flex;
@@ -704,7 +701,6 @@
     width: 190px;
     height: 190px;
     overflow: hidden;
-    background-color: blue;
   }
 }
 @media (min-width: 768px){
@@ -722,13 +718,13 @@
    width: 25%;
  }
   .res_container {
-      display: flex;
-      flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
   
   .category_container {
-      flex-direction: row;
-      align-items: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
   }
   
   .res_list {
@@ -742,9 +738,8 @@
     margin-right: 1rem;
   }
   .main_res_card_container{
-     background-color: aqua;
-     display: flex;
-     flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
   
   .main_res_card {
@@ -768,28 +763,30 @@
    width: 50px;
    height: 50px;
  }
-  .res_page{
-    display: flex;
-  }
-  .res_card {
-    display: flex;
-    width: 35%;
-  }
-  .image_container {
+ .res_page{
+   display: flex;
+ }
+ .res_card {
+   display: flex;
+   width: 35%;
+ }
+ .image_container {
     position: relative;
     width: 200px;
     height: 200px;
     overflow: hidden;
-    background-color: blue;
   }
-  .food_card_container{
+ .food_card_container{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
   }  
-  .food_card{
+ .food_card{
     width: 230px;
     margin: 8px;
+  }
+  .food_price {
+    font-size: 12px;
   }
   .res_category_name{
     display: flex;
@@ -806,7 +803,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
   }
   .footer_left {
     margin-top: 5px;
@@ -814,13 +810,11 @@
   .footer_des_container{
     display: flex;
   }  
-  
   .footer-right-secondary {
     display: flex;
     flex-direction: column;
     margin-right: 120px;
   }
-  
   .footer-icon-container {
    justify-content: flex-start;
   }
@@ -835,7 +829,6 @@
    display: flex;
    flex-wrap: wrap;
    margin: 20px;
-   background-color: red;
  }
 
  .food_cart {
@@ -848,13 +841,11 @@
    margin-bottom: 10px;
    margin-left: 10px;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-   background-color: yellow;
  }
  .carthistory_title_container {
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
-   background-color: white;
  }
  .carthistory_title {
    display: flex;
@@ -866,14 +857,12 @@
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
    width: 150px;
    height: 30px;
-   background-color: yellow;
  }
 
  .history_food_card {
    width: 350px;
    height: 150px;
    border-radius: 5px;
-   background-color: aqua;
    display: flex;
    flex-direction: column;
    margin-top: 15px;
@@ -908,7 +897,6 @@
    margin-top: 15px;
    margin-right: 10px;
    width: 100%;
-   background-color: aqua;
  }
 
  .restaurant-list-container {
@@ -918,19 +906,16 @@
    flex-wrap: wrap;
    width: 15%;
    justify-content: center;
-   background-color: palevioletred;
  }
   .res_container {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      background-color: purple;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
   }
   .res_card {
     display: flex;
     width: 25%;
-    background-color: greenyellow;
-    }
+  }
   .category_container {
     flex-direction: row;
     align-items: flex-start;
@@ -948,7 +933,6 @@
   }
   
   .main_res_card_container {
-    background-color: aqua;
     display: flex;
     flex-wrap: wrap;
    margin-top: 20px;
@@ -988,9 +972,8 @@
       width: 230px;
       margin: 8px;
   }
-  .food_card_container{
-    display: flex;
-    flex-wrap: wrap;
+  .food_price {
+    font-size: 12px;
   }
   .res_category_name {
     display: flex;
@@ -1026,13 +1009,11 @@
    margin-bottom: 10px;
    margin-left: 10px;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-   background-color: yellow;
  }
  .carthistory_title_container {
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
-   background-color: white;
  }
  .history_food_name {
    font-size: 16px;

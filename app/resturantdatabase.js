@@ -68,35 +68,35 @@ export const RESTAURANTS = [
          id: 1_1,
          name: "پیتزا مارگاریتا",
          description: "پیتزای کلاسیک با سس گوجه‌فرنگی و پنیر موزارلا.",
-         price: 80,
+         price: 180000,
          image: Pizza
       },
       {
          id: 2_1,
          name: "پاستا آلفردو",
          description: "پاستای خامه‌ای با سس آلفردو.",
-         price: 70,
+         price: 150000,
          image: Pasta
       },
       {
          id: 3_1,
          name: "ساندویچ مرغ",
          description: "ساندویچ با مرغ ریش ریش شده",
-         price: 100,
+         price: 100000,
          image: Sandwich
       },
       {
          id: 4_1,
          name: "سوخاری",
          description: "مرغ سوخاری به همراه سیب زمینی سرخ کرده",
-         price: 130,
+         price: 170000,
          image: Sokhary
       },
       {
          id: 5_1,
          name: "استیک گوشت",
          description: "استیک با گوشت خوشمزه",
-         price: 150,
+         price: 200000,
          image: Stake
       }
     ]
@@ -115,35 +115,35 @@ export const RESTAURANTS = [
          id: 1_2,
          name: "خورشت قیمه",
          description: "خورشت قیمه با گوشت تازه و فراوان",
-         price: 50,
+         price: 90000,
          image: Gheime
       },
       {
          id: 2_2,
          name: "خورشت فسنجان",
          description: "خورشت فسنجان با گردو و رب انار محلی و تازه",
-         price: 45,
+         price: 120000,
          image: Fesenjan
       },
       {
          id: 3_2,
          name: "قلیه ماهی",
          description: "قلیه ماهی با ماهی تازه و خوشمزه",
-         price: 100,
+         price: 180000,
          image: Ghelyemahi
       },
       {
          id: 4_2,
          name: "لوبیا پلو",
          description: "لوبیا پلو با گوشت چرخ کرده و لوبیای تازه",
-         price: 130,
+         price: 80000,
          image: Lobiapolo
       },
       {
          id: 5_2,
          name: "عدس پلو",
          description: "عدس پلو با گوشت چرخ کرده و کشمش پلویی",
-         price: 150,
+         price: 80000,
          image: Adaspolo
       }
     ]
@@ -162,35 +162,35 @@ export const RESTAURANTS = [
          id: 1_3,
          name: "بختیاری",
          description: "کباب بختیاری با گوشت تازه به همراه گوجه",
-         price: 50,
+         price: 210000,
          image: Bakhtiyari
       },
       {
          id: 2_3,
          name: "کباب برگ",
          description: "کباب برگ نرم به همراه نوشیدنی",
-         price: 45,
+         price: 230000,
          image: Barg
       },
       {
          id: 3_3,
          name: "چنجه",
          description: "کباب چنجه",
-         price: 100,
+         price: 250000,
          image: Chenje
       },
       {
          id: 4_3,
          name: "کباب لقمه",
          description: "کباب لقمه",
-         price: 130,
+         price: 200000,
          image: Loghmeh
       },
       {
          id: 5_3,
          name: "سلطانی",
          description: "کباب سلطانی",
-         price: 150,
+         price: 210000,
          image: Soltani
       }
     ]
@@ -209,35 +209,35 @@ export const RESTAURANTS = [
          id: 1_4,
          name: "جگر پیچ",
          description: "کباب جگر پیچ با دنبه نرم و خوش پخت",
-         price: 50,
+         price: 180000,
          image: Jegarpich
       },
       {
          id: 2_4,
          name: "لقمه میکس",
          description: "لقمه میکس دارای جگر، دل، قلوه و دنبه کبابی",
-         price: 45,
+         price: 250000,
          image: Loghmemix
       },
       {
          id: 3_4,
          name: "رول کبابی",
          description: "رول کبابی",
-         price: 100,
+         price: 270000,
          image: Rolekababi
       },
       {
          id: 4_4,
          name: "دل کبابی",
          description: "کباب دل گوسفندی آبدار",
-         price: 130,
+         price: 170000,
          image: Delkababi
       },
       {
          id: 5_4,
          name: "دل مرغ کبابی",
          description: "دل مرغ کبابی",
-         price: 150,
+         price: 110000,
          image: Delemorgh
       }
     ]
@@ -256,35 +256,35 @@ export const RESTAURANTS = [
          id: 1_5,
          name: "کوفته تبریزی",
          description: "کوفته تبریزی",
-         price: 50,
+         price: 90000,
          image: KofteTabrizi
       },
       {
          id: 2_5,
          name: "دلمه برگ مو",
          description: "دلمه برگ مو",
-         price: 45,
+         price: 80000,
          image : DolmeBarg
       },
       {
          id: 3_5,
          name: "کشک بادمجان",
          description: "کشک بادمجان با کشک مخصوص",
-         price: 100,
+         price: 70000,
          image: Kashkbademjan
       },
       {
          id: 4_5,
          name: "کوکو سبزی",
          description: "کوکوسبزی با سبزی تازه",
-         price: 130,
+         price: 60000,
          image: Kokosabzi
       },
       {
          id: 5_5,
          name: "کتلت",
          description: "کتلت به همراه سیب زمینی سرخ کرده",
-         price: 150,
+         price: 80000,
          image: Kotlet
       }
     ]

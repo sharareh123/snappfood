@@ -3,12 +3,14 @@ import { CartItem } from "../component/CartItem"
 import { useCallback, useMemo } from "react"
 import { reset } from "@/data/redux/cartSlice"
 import { calculateShopingCart } from "@/data/utils/calculateShopingCart"
-import { addToHistory } from "@/data/redux/historySlice"
+import { addToHistory, clearHistory } from "@/data/redux/historySlice"
 import '../style.css'
 
 export const CartList = () => {
 
   const {cart} = useSelector (store => store.cart)
+  const history = useSelector(store => store.history);
+  const historyCart = history?.historyCart || []; 
   const dispatch = useDispatch()
   const isNotEmptyCart = !!cart.length
 
@@ -22,6 +24,10 @@ export const CartList = () => {
   dispatch(addToHistory({ userId: 1, item: cart, totalPrice }));
   dispatch(reset());
 }, [totalPrice, cart]);
+
+const handleClearHistory = useCallback(() => {
+    dispatch(clearHistory());
+  }, [dispatch]);
 
 
  
@@ -47,7 +53,7 @@ export const CartList = () => {
           </div>
         </div>
         :
-        <div>
+        <div style={{margin:15}}>
           سبد خرید خالی است!
         </div>
       }
@@ -66,6 +72,13 @@ export const CartList = () => {
         </button>
        </div>
       }
+      {historyCart.length > 0 && (
+          <div>
+            <button onClick={handleClearHistory} className="all_delete_payment_btns">
+              پاک کردن تاریخچه خرید
+            </button>
+          </div>
+        )}
       </div>
       
     </div>

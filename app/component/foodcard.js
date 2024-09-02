@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image'; // اگر از Next.js استفاده می‌کنید
+import Image from 'next/image'; 
 
 
 const FoodCard = ({ food}) => {
@@ -26,7 +26,7 @@ const FoodCard = ({ food}) => {
         </div>
       </div>
       <div className='history_food_price'>
-          {food.price}
+          {food.price} تومان
       </div>  
     </div>
   </div> 
