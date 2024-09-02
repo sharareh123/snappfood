@@ -1,95 +1,41 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import { filterByCategory } from "@/data/utils/filterByCategory";
+import RestaurantList from "./component/RestaurantList";
+import { Fast_Food, Iranian_Traditional_Food, Liver_House,Kebab_Restaurant, Home_style_Restaurante } from "./resturantdatabase";
+import './style.css';
 
-export default function Home() {
+const Page = () => {
+
+  const Iranian_Traditional_Food_restaurants = filterByCategory(Iranian_Traditional_Food)
+
+  const Fast_Food_restaurants = filterByCategory(Fast_Food) 
+
+  const Kebab_Restaurant_restaurants = filterByCategory(Kebab_Restaurant)
+
+  const Liver_House_restaurants = filterByCategory(Liver_House)
+
+  const Home_style_Restaurante_restaurants = filterByCategory(Home_style_Restaurante) 
+
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div  className="total_container">
+      <div className="restaurant_container">
+        <div className="restaurant-list-container">
+         <RestaurantList category={Fast_Food} restaurants={Fast_Food_restaurants} className="restaurant-list" />
+        </div>
+        <div className="restaurant-list-container">
+          <RestaurantList category={Iranian_Traditional_Food} restaurants={Iranian_Traditional_Food_restaurants} className="restaurant-list" />
+        </div>
+        <div className="restaurant-list-container">
+        <RestaurantList category={Kebab_Restaurant} restaurants={Kebab_Restaurant_restaurants} className="restaurant-list" />
+        </div>
+        <div className="restaurant-list-container">
+          <RestaurantList category={Liver_House} restaurants={Liver_House_restaurants} className="restaurant-list" />
+        </div>
+        <div className="restaurant-list-container">
+        <RestaurantList category={Home_style_Restaurante} restaurants={Home_style_Restaurante_restaurants} className="restaurant-list" />
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+    </div>
+  )
 }
+export default Page
