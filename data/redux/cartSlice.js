@@ -31,7 +31,7 @@ const cartSlice = createSlice ({
         state.cart.splice(index,1)
       },
       reset : (state) => {
-        state.cart.length ===0
+        state.cart=[]
       }
   }
 })

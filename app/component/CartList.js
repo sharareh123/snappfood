@@ -9,8 +9,6 @@ import '../style.css'
 export const CartList = () => {
 
   const {cart} = useSelector (store => store.cart)
-  const history = useSelector(store => store.history);
-  const historyCart = history?.historyCart || []; 
   const dispatch = useDispatch()
   const isNotEmptyCart = !!cart.length
 
@@ -72,13 +70,6 @@ const handleClearHistory = useCallback(() => {
         </button>
        </div>
       }
-      {historyCart.length > 0 && (
-          <div>
-            <button onClick={handleClearHistory} className="all_delete_payment_btns">
-              پاک کردن تاریخچه خرید
-            </button>
-          </div>
-        )}
       </div>
       
     </div>
